@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function StatusPage() {
   return (
     <div className="min-h-screen bg-[#F8FAFF] dark:bg-slate-900 flex items-center justify-center">
@@ -36,12 +38,13 @@ export default function StatusPage() {
             Estimated completion: 2 hours
           </p> */}
         </div>
-        <a
+
+        <Link
           href="/"
           className="inline-block mt-6 text-[#2563EB] hover:text-[#6366F1] font-medium"
         >
-          ← Back to main page
-        </a>
+          Go Home
+        </Link>
       </div>
     </div>
   );
